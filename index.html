@@ -2,20 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона. Main page.</title>
+    <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <!--Заголовок -->
   	<header class="">
   		<nav>
+  			<a href="">
+          		<img src="" alt="logo"><!--Изображение в центре заголовка -->
+          	</a>
   		 <ul>
-          <li class=""><a href="./info.html">Информация</a></li>
-          <li class=""><a href="./gallery.html">Фото и Видео</a></li>
-          <li class="">
-          	<a href="./logo.html">
-          		<img src="img/logo.png" alt="logo">
-          	</a></li> <!--Изображение в центре заголовка -->
+          <li class=""><a href="">Информация</a></li>
+          <li class=""><a href="">Фото и Видео</a></li>
           <li class=""><a href="">Карта Штата</a></li>
           <li class=""><a href="hotels.html">Гостиницы</a></li>
   		 </ul>
@@ -23,70 +22,69 @@
   	</header>
   	<!--Контент -->
   	<main class="">
+  		<h1>А вы слышали о Седоне?</h1>
+  		<div>
+  			<P>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+ 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>				
+  		</div>
   		<section>
-  		  	<h4>Седона — небольшой городок в Аризоне,<br>
-заслуживающий большего!</h4>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
-        <section>
-        	<div class="ads_text_left">
-        		<h4>Настоящий Городок</h4> <!-- Оценивал размер текста по макету, и фотошоп выдал 21pt.-->
-        		<p>&mdash; №1 &mdash;</p> <!-- Или черточки вокруг № задаются с помощью стиля?-->
-        		<p>Седона не аттракцион для туристов,<br>там течет своя жизнь</p>
-        	</div>
-        	<div class="ads_photo_right">
-        		<img src="" alt="advertisment_photo">
-        	</div> <!-- Можно ли вместо DIV в данном случае использовать <figure>? -->
-        </section>
-        <section>
-        	<div class="housing_info">
-        		<div class="house">
-        			<img src="" alt="house.png">
-        		</div>
-        		<h4>Жильё<h4>
-        		<p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-        	</div>
-        	<div class="food_info">
-        		<div class="burger">
-        			<img src="" alt="burger.png">
-        		</div>
-        		<h4>Еда<h4>
-        		<p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
-        	</div>
-        	<div class="souvenirs_info">
-        		<div class="souvenirs_info">
-        			<img src="" alt="giftbox.png">
-        		</div>
-        		<h4>Сувениры<h4>
-        		<p>Не только китайского, но и местного<br> производства!</p>
-        	</div>
-        </section>
-        <section>
-        	<div class="ads_photo_left">
-        		<img src="" alt="advertisment_photo">
-        	</div>
-        	<div class="ads_text-right">
-        		<h4>Там есть мост дьявола</h4>
-        		<p>&mdash; №2 &mdash;</p>
-        		<p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
-        	</div>
-        </section>
-        <section class="gray_background">
-        	<div class="number3">
-        		<h4>Небольшая площадь</h4>
-        		<p>&mdash; №3 &mdash;</p>
-        		<p>Все достопримечательности<br> находятся очень близко</p>
-        	</div>
-        	<div class="number4">
-        		<h4>Красивая дорога</h4>
-        		<p>&mdash; №4 &mdash;</p>
-        		<p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
-        	</div>
-        	<div class="number5">
-        		<h4>Мало туристов</h4>
-        		<p>&mdash; №5 &mdash;</p>
-        		<p>Большинство едет в Гранд Каньон<br> и толпится там</p>
-        	</div>        	
+  			<ol>
+  		  		<li>
+        			<h2>Настоящий Городок</h2>
+        			<p>- №1 -</p>
+        			<p>Седона не аттракцион для туристов,там течет своя жизнь</p>
+        			<div class="">
+        				<img src="" alt="advertisment_photo">
+        			</div>
+        			<ul>
+        				<li>
+        					<div class="">
+        						<img src="" alt="house.png">
+        					</div>
+        					<h2>Жильё<h2>
+        					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        				</li>
+        				<li>
+        					<div class="">
+        						<img src="" alt="burger.png">
+        					</div>
+        					<h2>Еда<h2>
+        					<p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+        				</li>
+        				<li>
+        					<div class="">
+        						<img src="" alt="giftbox.png">
+        					</div>
+        					<h2>Сувениры<h2>
+        					<p>Не только китайского, но и местного производства!</p>
+        				</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div class="">
+        				<img src="" alt="advertisment_photo">
+        			</div>
+        			<h2>Там есть<br> мост дьявола</h2>
+        			<p>- №2 -</p>
+        			<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        		</li>
+        	
+        		<li class="">
+        			<h2>Небольшая площадь</h2>
+        			<p>- №3 -</p>
+        			<p>Все достопримечательности находятся очень близко</p>
+        		</li>
+        		<li class="">
+        			<h2>Красивая дорога</h2>
+        			<p>- №4 -</p>
+        			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        		</li>
+        		<li class="">
+        			<h2>Мало туристов</h2>
+        			<p>- №5 -</p>
+        			<p>Большинство едет в Гранд Каньон и толпится там</p>
+        		</li>
+        	</ol>        	
         </section>
         <section class="interested">
         	<div>
