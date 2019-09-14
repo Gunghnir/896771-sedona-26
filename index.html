@@ -22,7 +22,7 @@
   	</header>
   	<!--Контент -->
   	<main class="">
-  		<h1>А вы слышали о Седоне?</h1>
+  		<h1 class="visually-hidden">А вы слышали о Седоне?</h1>
   		<div>
   			<P>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
  			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>				
@@ -35,7 +35,7 @@
         			<p>- №1 -</p>
         			<p>Седона не аттракцион для туристов,там течет своя жизнь</p>
         			<div class="">
-        				<img src="img/town.png" alt="town.png">
+        				<img src="img/town.png" alt="town">
         			</div>
         			<ul>
         				<li>
@@ -54,7 +54,7 @@
         		</li>
         		<li>
         			<div class="">
-        				<img src="img/canyon.png" alt="canyon.png">
+        				<img src="img/canyon.png" alt="canyon">
         			</div>
         			<h3>Там есть<br> мост дьявола</h3>
         			<p>- №2 -</p>
@@ -78,11 +78,39 @@
         	</ol>        	
         </section>
         <section class="">
-          <div>
-            <h2>Поиск гостиницы</h2> <!--Будет скрыт -->
+        	<div>
+            	<h2 class="visually-hidden">Поиск гостиницы</h2> <!--Будет скрыт -->
         		<p>Заинтересовались?</p>
         		<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         	</div>
+        	<form action="https://echo.htmlacademy.ru" method="post" class="">
+        		<div>
+        			<label for="check-in">
+        				Дата заезда:
+      					<input id="check-in" type="date" name="login">
+      				</label>
+      				<label for="check-out">
+      					Дата выезда:
+      					<input id="check-out" type="date" name="login">
+      				</label>
+      			</div>
+      			<div>
+      				<label for="adults">
+        				Взрослые:
+        				<button>-</button>
+      					<input id="adults" type="text" name="login">
+      					<button>+</button>
+      				</label>
+      			</div>
+      			<div>
+      				<label for="kids">
+        				Дети:
+        				<button>-</button>
+      					<input id="kids" type="text" name="login">
+      					<button>+</button>
+      				</label>
+      			</div>
+    		</form>
         </section>  
   	</main>
     <!--Подвал -->
@@ -106,7 +134,7 @@
   			 WEBSITE BY	
   			</span>
   			<a href="https://htmlacademy.ru">
-  				<img src="img/logo-htmlacademy.svg" width="150px" alt="htmlacademy">
+  				<img src="img/logo-htmlacademy.svg" width="150px" alt="HTML Academy">
   			</a>
   		</div>
   	</footer>
