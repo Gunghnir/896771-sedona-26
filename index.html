@@ -87,18 +87,18 @@
         		<div>
         			<label for="check-in">
         				Дата заезда:
-      					<input id="check-in" type="date" name="login">
+      					<input id="check-in" type="date" name="check-in">
       				</label>
       				<label for="check-out">
       					Дата выезда:
-      					<input id="check-out" type="date" name="login">
+      					<input id="check-out" type="date" name="check-out">
       				</label>
       			</div>
       			<div>
       				<label for="adults">
         				Взрослые:
         				<button>-</button>
-      					<input id="adults" type="text" name="login">
+      					<input id="adults" type="number" min="1" name="adults" step="1" value="1">
       					<button>+</button>
       				</label>
       			</div>
@@ -106,7 +106,7 @@
       				<label for="kids">
         				Дети:
         				<button>-</button>
-      					<input id="kids" type="text" name="login">
+      					<input id="kids" type="number" min="0" name="kids" step="1" value="0">
       					<button>+</button>
       				</label>
       			</div>
