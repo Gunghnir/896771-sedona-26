@@ -10,7 +10,7 @@
   	<header class="">
   		<nav>
   			<a href="">
-          		<img src="img/logo.png" alt="logo"><!--Изображение в центре заголовка -->
+          		<img src="img/logo.png" alt="logo">
           	</a>
   		 <ul>
           <li class=""><a href="">Информация</a></li>
@@ -79,7 +79,7 @@
         </section>
         <section class="">
         	<div>
-            	<h2 class="visually-hidden">Поиск гостиницы</h2> <!--Будет скрыт -->
+            	<h2 class="visually-hidden">Поиск гостиницы</h2>
         		<p>Заинтересовались?</p>
         		<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         	</div>
@@ -87,7 +87,7 @@
         		<div>
         			<label for="check-in">
         				Дата заезда:
-      					<input id="check-in" type="date" name="check-in">
+      					<input id="check-in" type="date" name="check-in" required> <!--required -->
       				</label>
       				<label for="check-out">
       					Дата выезда:
@@ -97,19 +97,24 @@
       			<div>
       				<label for="adults">
         				Взрослые:
-        				<button>-</button>
+        				<button class="visually-hidden" type="button">Убавить</button>
       					<input id="adults" type="number" min="1" name="adults" step="1" value="1">
-      					<button>+</button>
+      					<button class="visually-hidden" type="button">Прибавить</button>
       				</label>
       			</div>
       			<div>
       				<label for="kids">
         				Дети:
-        				<button>-</button>
+        				<button class="visually-hidden" type="button">Убавить</button>
       					<input id="kids" type="number" min="0" name="kids" step="1" value="0">
-      					<button>+</button>
+      					<button class="visually-hidden" type="button">Прибавить</button>
       				</label>
       			</div>
+            <div>
+              <label for="search">
+                <button type="submit" class="visually-hidden" value="submit">Поиск</button>
+              </label>
+            </div>
     		</form>
         </section>  
   	</main>
