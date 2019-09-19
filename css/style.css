@@ -22,7 +22,6 @@ a {
 
 .page-header{
     color: #ffffff;
-    height: 50px;
 }
 .main-navigation {
     background-color: #ffffff;
@@ -31,7 +30,6 @@ a {
     line-height: 25px;
     padding-left: 5%;
     padding-right: 5%;
-    Pos
 }
 
 .site-navigation {
@@ -66,6 +64,15 @@ a {
 }
 
 .feature h3{
+    font-size: 30px;
+    line-height: 42px;    
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list h3{
     font-size: 30px;
     line-height: 42px;    
 }
