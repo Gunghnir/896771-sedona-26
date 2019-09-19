@@ -20,24 +20,45 @@ a {
     text-decoration: none;
   }
 
+.page-header{
+    color: #ffffff;
+    height: 50px;
+}
 .main-navigation {
     background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    Pos
 }
 
 .site-navigation {
     list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .site-navigation a {
-    color:#000000
+    color:#000000;
+    position: relative;
+    margin-left: -69px;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
+    justify-content: space-between;
     background-color:#52a0e0;
+    position:relative; 
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .feature{
@@ -49,15 +70,10 @@ a {
     line-height: 42px;    
 }
 
-.feature-note{
- 
-}
-
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-    …
   }
