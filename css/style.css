@@ -33,6 +33,9 @@ a {
 }
 
 .site-navigation {
+    padding-top: 20px;
+    margin-top: 0px;
+    padding-bottom: 15px;
     list-style: none;
     display: flex;
     justify-content: space-between;
