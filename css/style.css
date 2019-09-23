@@ -107,7 +107,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%)
 }
 
 .footer-icon {
