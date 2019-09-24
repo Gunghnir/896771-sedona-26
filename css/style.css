@@ -79,14 +79,15 @@ a {
 }
 
 .footer-main{
-    position:absolute;
+    position: absolute;
     display: flex;
     width:100%;
     min-height: 120px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color:white;
+    text-align: center;
 }
 
 .footer-main a{
@@ -94,24 +95,22 @@ a {
 }
 
 .footer-hashtag {
-    width: 33.3%;
+    width: 400px;
     font-size: 30px;
     line-height: 26px;
-    padding-left: 133px;
     font-weight: bold;
     justify-content: flex-start;
 }
 
 .footer-media{
-    width: 33.3%;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%)
 }
 
 .footer-icon {
-    background-color: #5691b3;
+    background-color: #81b3d2;
     position: relative;
     top: 50%;
     left: 50%;
@@ -120,14 +119,27 @@ a {
 }
 
 .footer-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
     margin-right: 10px;
-    background-color: #5691b3; /* Цвет потом поменяю. Нет под рукой "пипетки"*/
+    background-color: #81b3d2; 
+}
+
+.footer-icon-wrap:hover,
+.footer-icon-wrap:focus{
+ color:#669ec0;
+}
+
+.footer-icon-wrap:hover path,
+.footer-icon-wrap:focus path{
+ color:#000000;
 }
 
 .footer-logo{
-    width: 33.3%;
+    width: 400px;
     display: flex;   
     justify-content: flex-end;
     align-items: center;
