@@ -130,21 +130,33 @@ a {
 
 .footer-icon-wrap:hover,
 .footer-icon-wrap:focus{
- color:#669ec0;
+    background-color: #669ec0;
 }
 
-.footer-icon-wrap:hover path,
-.footer-icon-wrap:focus path{
- color:#000000;
+.footer-icon-wrap:active path{
+    background-color: #5496bd;
 }
+
+.icon-button svg:active {
+	fill: #88b6d1;
+} /*Не работает, надо спросить*/
 
 .footer-logo{
     width: 400px;
-    display: flex;   
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
+.footer-logo svg{
+    display: block;
+    margin-left: 5px;
+}
+
+.footer-logo svg:hover{
+    background-color: #81b3d2;
+}
 
 .visually-hidden {
     position: absolute;
