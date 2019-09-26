@@ -8,12 +8,7 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-
     background-color: #ffffff;
-    background-image: url("../img/background.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 a {
@@ -61,12 +56,27 @@ a {
 }
 
 .feature{
+    display:flex;
+    flex-direction: column; 
+    height: 1400px; /*вот задан контейнер flex, а далее смотрим на строки 73-74  */
+    background-image: url("../img/background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
 }
 
 .feature h3{
     font-size: 30px;
     line-height: 42px;    
+}
+
+.feature h3, /* А дальше надпись не опускается ниже. Даже если занулить все нижние отступы или увеличть высоту флексбокса. */
+.feature p{
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .feature-list {
@@ -76,6 +86,16 @@ a {
 .feature-list h3{
     font-size: 30px;
     line-height: 42px;    
+}
+
+.advertisment {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.advertisment h3{
+    text-align: center;
 }
 
 .footer-main{
