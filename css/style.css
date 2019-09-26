@@ -11,11 +11,17 @@ body {
     background-color: #ffffff;
 }
 
+.width-limit {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 a {
     text-decoration: none;
   }
 
-.page-header{
+.page-header {
     color: #000000;
 }
 .main-navigation {
@@ -55,35 +61,32 @@ a {
     transform: translate(-50%);
 }
 
-.feature{
+.feature {
     display:flex;
     flex-direction: column; 
-    height: 1400px; /*вот задан контейнер flex, а далее смотрим на строки 73-74  */
+    padding-top: 650px;
     background-image: url("../img/background.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     text-align: center;
 }
 
-.feature h3{
+.feature h3 {
     font-size: 30px;
     line-height: 42px;    
 }
 
-.feature h3, /* А дальше надпись не опускается ниже. Даже если занулить все нижние отступы или увеличть высоту флексбокса. */
-.feature p{
+.feature h3,
+.feature p {
     justify-content: flex-end;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .feature-list {
     list-style: none;
 }
 
-.feature-list h3{
+.feature-list h3 {
     font-size: 30px;
     line-height: 42px;    
 }
@@ -94,24 +97,23 @@ a {
     text-align: center;
 }
 
-.advertisment h3{
+.advertisment h3 {
     text-align: center;
 }
 
-.footer-main{
-    position: absolute;
+.footer-main {
     display: flex;
     width:100%;
     min-height: 120px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color:white;
+    background-color:#ffffff;
     text-align: center;
 }
 
-.footer-main a{
-    color:black;
+.footer-main a {
+    color: #000000;
 }
 
 .footer-hashtag {
@@ -122,7 +124,7 @@ a {
     justify-content: flex-start;
 }
 
-.footer-media{
+.footer-media {
     width: 400px;
     display: flex;
     justify-content: center;
@@ -149,19 +151,19 @@ a {
 }
 
 .footer-icon-wrap:hover,
-.footer-icon-wrap:focus{
+.footer-icon-wrap:focus {
     background-color: #669ec0;
 }
 
-.footer-icon-wrap:active path{
+.footer-icon-wrap:active path {
     background-color: #5496bd;
 }
 
-.icon-button svg:active {
+.icon-button:active path {
 	fill: #88b6d1;
-} /*Не работает, надо спросить*/
+}
 
-.footer-logo{
+.footer-logo {
     width: 400px;
     display: flex;
     flex-direction: row;
@@ -169,13 +171,13 @@ a {
     align-items: center;
 }
 
-.footer-logo svg{
+.footer-logo svg {
     display: block;
     margin-left: 5px;
 }
 
-.footer-logo svg:hover{
-    background-color: #81b3d2;
+.footer-logo:hover path {
+    fill: #81b3d2;
 }
 
 .visually-hidden {
