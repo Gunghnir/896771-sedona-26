@@ -78,46 +78,45 @@
         			<p>- №5 -</p>
         			<p>Большинство едет в Гранд Каньон и толпится там</p>
         		</li>
-        	</ol>        	
-        </section>
-        <section class="">
-        	<div class="advertisment">
+			</ol>
+			<article class="advertisment">
             	<h2 class="visually-hidden">Поиск гостиницы</h2>
         		<h3>Заинтересовались?</h3>
         		<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        	</div>
-        	<form action="https://echo.htmlacademy.ru" method="post" class="">
-        		<div>
-        			<label for="check-in">
+			</article>        	
+        </section>
+        <section class="form-container">
+			<a href="" class="form-name">Поиск гостиницы в Седоне</a>
+        	<form action="https://echo.htmlacademy.ru" method="post" class="form-menu">
+        		<div class="date-pick">
+        			<label class="date-pick-item" for="check-in">
         				Дата заезда:
       					<input id="check-in" type="date" name="check-in" required>
       				</label>
-      				<label for="check-out">
+      				<label class="date-pick-item" for="check-out">
       					Дата выезда:
       					<input id="check-out" type="date" name="check-out">
       				</label>
       			</div>
-      			<div>
+      			<div class="tourist-pick">
       				<label for="adults">
         				Взрослые:
         				<button class="visually-hidden" type="button">Убавить</button>
-      					<input id="adults" type="number" min="1" name="adults" step="1" value="1">
+      					<input class="counter-field" id="adults" type="number" min="1" name="adults" step="1" value="1">
       					<button class="visually-hidden" type="button">Прибавить</button>
       				</label>
-      			</div>
-      			<div>
       				<label for="kids">
         				Дети:
         				<button class="visually-hidden" type="button">Убавить</button>
-      					<input id="kids" type="number" min="0" name="kids" step="1" value="0">
+      					<input class="counter-field" id="kids" type="number" min="0" name="kids" step="1" value="0">
       					<button class="visually-hidden" type="button">Прибавить</button>
       				</label>
       			</div>
-            <div>
-              <label for="search">
-                <button type="submit" class="visually-hidden" value="submit">Поиск</button>
-              </label>
-            </div>
+            	<div>
+              		<label for="search">
+                		<button type="submit" class="form-search" value="submit">Найти</button>
+              		</label>
+            	</div>
     		</form>
         </section>  
   	</main>

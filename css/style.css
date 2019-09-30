@@ -95,12 +95,107 @@ a {
     font-size: 30px;
     line-height: 42px;
     text-align: center;
+    margin-bottom: 53px;
 }
 
 .advertisment h3 {
     text-align: center;
 }
 
+/* Свойства формы */
+
+.form-container {
+    position: relative;
+    width: 570px;
+    margin: 0 auto;
+}
+
+.form-name {
+    display:block;
+    background-color: #766357;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.form-name:hover {
+    background-color: #604e43;
+}
+
+.form-name:active {
+    color: #857871;
+    background-color: #503e33;
+}
+
+.form-menu {
+    background-color: #ffffff;
+    position: relative;
+    padding: 55px;
+    margin-bottom: 78px;
+}
+
+.date-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.date-pick input{
+    width: 346px;
+    margin-left: 21px;
+    height: 38px; /* или задать паддингами? Ещё и стрелочки поползли, как их выровнять? */
+    padding-left: 13px;
+    background-color: #f2f2f2;
+}
+
+.date-pick-item {
+    margin-bottom: 30px;
+}
+
+.tourist-pick {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.counter-field {
+    width: 114px;
+    height: 38px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.form-search {
+    display:block;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    width: 458px;
+    height: 58px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url("../img/calendar.svg") no-repeat center;
+    background-size: contain;
+  } /* не забыть спросить, можно ли из такого оформления иконки календаря начать менять её заливку или делать отдельный div для иконки*/
+
+
+/* Свойства подвала */
 .footer-main {
     display: flex;
     width:100%;
@@ -178,6 +273,11 @@ a {
 
 .footer-logo:hover path {
     fill: #81b3d2;
+}
+
+
+.footer-logo:active path {
+    fill: #bdbbbc;
 }
 
 .visually-hidden {
