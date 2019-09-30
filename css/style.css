@@ -17,8 +17,10 @@ body {
     max-width: 1200px;
 }
 
-a {
+.footer-main a,
+.hotel-buttons a {
     text-decoration: none;
+    color: #ffffff;
   }
 
 .page-header {
@@ -159,7 +161,7 @@ a {
     margin-bottom: 30px;
 }
 
-.tourist-pick {
+.person-counter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -169,8 +171,14 @@ a {
 .counter-field {
     width: 114px;
     height: 38px;
+    margin-left: 21px;
     background-color: #f2f2f2;
     text-align: center;
+}
+
+.person-counter .adults,
+.person-counter .kids {
+    padding-left: 15px;
 }
 
 .form-search {
@@ -187,6 +195,15 @@ a {
     text-align: center;
 }
 
+.form-search:hover {
+    background-color: #81b3d2;
+}
+
+
+.form-search:active {
+    color: #bdbbbc;
+}
+
 input[type=date]::-webkit-calendar-picker-indicator {
     color: transparent;
     opacity: 1;
@@ -194,6 +211,97 @@ input[type=date]::-webkit-calendar-picker-indicator {
     background-size: contain;
   } /* не забыть спросить, можно ли из такого оформления иконки календаря начать менять её заливку или делать отдельный div для иконки*/
 
+/*Свойства hotels.html */
+
+.wrap-hotel {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: solid 2px #bdbbbc;
+}
+
+.hotel-summary {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 20px;
+    justify-content: flex-start;
+    /* background-color: #52a0e0; */
+}
+
+.hotel-summary h2 a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.hotel-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.hotel-stars{
+    text-align: right;
+    position: relative;
+}
+
+.hotel-star {
+    display: inline-block;
+    font-size: 0;
+    width: 19px;
+    height: 17px;
+    margin-left: 4px;
+    background: url("../img/star.svg") no-repeat;
+}
+
+.hotel-type {
+    width: 100px;
+}
+
+.hotel-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.hotel-buttons .hotel-details a {
+    display:block;
+    background-color: #81b3d2;
+    color: #ffffff;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 15px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.hotel-buttons .hotel-book a {
+    display: block;
+    background-color: #766357;
+    color: #ffffff;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 15px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.hotel-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.rating-numeric {
+    background-color: #dfdddd;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 /* Свойства подвала */
 .footer-main {
