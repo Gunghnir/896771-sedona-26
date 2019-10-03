@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 	<title>Седона</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Sans+Narrow&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Sans+Narrow&display=swap" rel="stylesheet"> -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
@@ -45,15 +45,15 @@
 					<ul class="feature-city">
 						<li class="interest-item">
 							<h3>Жильё</h3>
-							<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+							<p class="note-last-line">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 						</li>
 						<li class="interest-item">
 							<h3>Еда</h3>
-							<p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+							<p class="note-last-line">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>
 						<li class="interest-item">
 							<h3>Сувениры</h3>
-							<p>Не только китайского, но и местного производства!</p>
+							<p class="note-last-line">Не только китайского, но и местного производства!</p>
 						</li>
 					</ul>
 				</li>
@@ -68,17 +68,17 @@
         		<li class="interest-item">
         			<h3>Небольшая площадь</h3>
         			<p>- №3 -</p>
-        			<p>Все достопримечательности находятся очень близко</p>
+        			<p class="note-last-line">Все достопримечательности находятся очень близко</p>
         		</li>
         		<li class="interest-item">
         			<h3>Красивая дорога</h3>
         			<p>- №4 -</p>
-        			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        			<p class="note-last-line">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         		</li>
         		<li class="interest-item">
         			<h3>Мало туристов</h3>
         			<p>- №5 -</p>
-        			<p>Большинство едет в Гранд Каньон и толпится там</p>
+        			<p class="note-last-line">Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
 			</ol>
 			<article class="advertisment">
@@ -87,17 +87,24 @@
         		<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			</article>        	
         </section>
-        <section class="form-container">
+        <section>
+			<div class="map">
+				<h2 class="visually-hidden">Карта региона Седоны</h2>
+				<div class="map-img">
+					<span></span>
+				</div>
+			</div>
+			<div  class="form-container">
 			<a href="" class="form-name">Поиск гостиницы в Седоне</a>
         	<form action="https://echo.htmlacademy.ru" method="post" class="form-menu">
         		<div class="date-pick">
         			<label class="date-pick-item" for="check-in">
         				Дата заезда:
-      					<input id="check-in" type="date" name="check-in" required>
+      					<input id="check-in" type="text" name="check-in" required>
       				</label>
       				<label class="date-pick-item" for="check-out">
       					Дата выезда:
-      					<input id="check-out" type="date" name="check-out">
+      					<input id="check-out" type="text" name="check-out">
       				</label>
       			</div>
       			<div class="person-counter">
@@ -119,8 +126,9 @@
                 		<button type="submit" class="form-search" value="submit" id="search">Найти</button>
               		</label>
             	</div>
-    		</form>
-        </section>  
+			</form>
+			</div>
+		</section> 
   	</main>
     <!--Подвал -->
   	<footer class="footer-main">
