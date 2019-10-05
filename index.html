@@ -98,28 +98,24 @@
 			<a href="" class="form-name">Поиск гостиницы в Седоне</a>
         	<form action="https://echo.htmlacademy.ru" method="post" class="form-menu">
         		<div class="date-pick">
-        			<label class="date-pick-item" for="check-in">
-        				Дата заезда:
-      					<input id="check-in" type="text" name="check-in" required>
-      				</label>
-      				<label class="date-pick-item" for="check-out">
-      					Дата выезда:
-      					<input id="check-out" type="text" name="check-out">
-      				</label>
+        			<label class="date-pick-item" for="check-in">Дата заезда:</label>
+					<input id="check-in" type="text" name="check-in" required>
+					<span class="calendar-icon"></span>
+				</div>
+				<div class="date-pick">
+      				<label class="date-pick-item" for="check-out">Дата выезда:</label>
+					<input id="check-out" type="text" name="check-out">
+					<span class="calendar-icon"></span>
       			</div>
       			<div class="person-counter">
-      				<label for="adults" class="adults">
-        				Взрослые:
+      				<label class="adults" for="adults">Взрослые:</label>
         				<button class="visually-hidden" type="button">Убавить</button>
       					<input class="counter-field" id="adults" type="number" min="1" name="adults" step="1" value="1">
       					<button class="visually-hidden" type="button">Прибавить</button>
-      				</label>
-      				<label for="kids" class="kids">
-        				Дети:
+      				<label class="kids" for="kids">Дети:</label>
         				<button class="visually-hidden" type="button">Убавить</button>
       					<input class="counter-field" id="kids" type="number" min="0" name="kids" step="1" value="0">
-      					<button class="visually-hidden" type="button">Прибавить</button>
-      				</label>
+      					<button class="visually-hidden" type="button">Прибавить</button>     				
       			</div>
             	<div>
               		<label for="search">

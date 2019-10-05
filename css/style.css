@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-    font-family: 'ptsans';
+    font-family: 'PT Sans';
     src: url('../fonts/ptsans.woff2') format('woff2'),
          url('../fonts/ptsans.woff') format('woff');
     font-weight: normal;
@@ -19,7 +19,7 @@ body {
   }
 
 @font-face {
-font-family: 'ptsans';
+font-family: 'PT Sans';
 src: url('../fonts/ptsansbold.woff2') format('woff2'),
         url('../fonts/ptsansbold.woff') format('woff');
 font-weight: bold;
@@ -43,28 +43,47 @@ font-style: normal;
 }
 
 .main-navigation {
+    position: relative;
     background-color: #ffffff;
     color: #000000;
     font-size: 16px;
     line-height: 25px;
-    padding-left: 50px;
-    padding-right: 30px;
+}
+
+.main-navigation ul {
+    padding-left: 73px;
+    padding-right: 73px;
 }
 
 .site-navigation {
+    display: flex;
     padding-top: 20px;
     margin: 0px;
     padding-bottom: 15px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    list-style: none;  
+    justify-content: space-around;
+}
+
+.site-navigation li:nth-child(1) {
+    width: 210px;
+    text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: auto;
+    width: 210px;
+    text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+    width: 210px;
+    text-align: right;
 }
 
 .site-navigation a {
     color:#000000;
     text-decoration: none;
-    margin-left: -69px;
 }
 
 .site-navigation a:hover,
@@ -271,26 +290,33 @@ background-color: #eeeeee}
 
 .date-pick {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 30px;
 }
 
 .date-pick input{
-    width: 342px;
+    width: 330px;
     margin-left: 21px;
     height: 38px;
     padding-left: 13px;
     background-color: #f2f2f2;
+    border:none;
+    box-shadow: 0;
 }
 
 .date-pick-item {
-    margin-bottom: 30px;
+    margin: auto;
 }
 
 .date-pick-item input {
     background: url("../img/calendar.svg") no-repeat;
     background-position: right;
+    background-color: #f2f2f2;
+    border:none;
+    box-shadow: 0;
 }
 
 .person-counter {
@@ -306,11 +332,20 @@ background-color: #eeeeee}
     margin-left: 21px;
     background-color: #f2f2f2;
     text-align: center;
+    border:none;
+    box-shadow: 0;
 }
 
-.person-counter .adults,
-.person-counter .kids {
+.adults,
+.kids {
     padding-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 21px;
+}
+
+.adults .counter-field {
+
 }
 
 .form-search {
@@ -336,12 +371,16 @@ background-color: #eeeeee}
     color: #94b9d2;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
-    color: transparent;
-    opacity: 1;
-    background: url("../img/calendar.svg") no-repeat center;
-    background-size: contain;
-  }
+.calendar-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background-image: url("../img/calendar.svg" no-repeat);
+    background-position: -73px -5px;
+    width: 21px;
+    height: 22px;
+}
 
 /*Свойства hotels.html */
 
@@ -386,13 +425,28 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: relative;
 }
 
-.hotel-star {
+.hotel-star-2 {
     display: inline-block;
     font-size: 0;
-    width: 19px;
+    width: 36px;
     height: 17px;
-    margin-left: 4px;
-    background: url("../img/star.svg") no-repeat;
+    background: url("../img/star.svg") repeat-x;
+}
+
+.hotel-star-3 {
+    display: inline-block;
+    font-size: 0;
+    width: 54px;
+    height: 17px;
+    background: url("../img/star.svg") repeat-x;
+}
+
+.hotel-star-4 {
+    display: inline-block;
+    font-size: 0;
+    width: 72px;
+    height: 17px;
+    background: url("../img/star.svg") repeat-x; /*Спросить, можно ли задать величину пустого пространства между повторяющимися элементами фона */
 }
 
 .hotel-type {
