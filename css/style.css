@@ -191,7 +191,7 @@ background-color: #eeeeee}
 
 .feature-note h3 {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     margin-top: 42px;
     margin-bottom: 18px;
     text-align: center;
@@ -213,7 +213,7 @@ background-color: #eeeeee}
 
 .interest-item h3 {
     display: inline-block;
-    width: 135px;
+    width: 170px;
 }
 
 .interest-item p {
@@ -319,12 +319,17 @@ background-color: #eeeeee}
 
 .date-pick-item {
     position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .calendar-icon {
+    position: absolute;
     background: url("../img/calendar.svg") no-repeat;
+    right: 50px; /* странно. Идея была в том, чтобы сделать блок Calendar-icon абсолютным с началом координат, берущимся от блока date-pick, но блок с иконкой не двигается */
     border:none;
     box-shadow: 0;
+    background-color: transparent;
 }
 
 .person-counter {
@@ -349,6 +354,12 @@ background-color: #eeeeee}
     text-align: center;
     border:none;
     box-shadow: 0;
+}
+
+.minus {
+    width: 38px;
+    float: left;
+    background-color: #f2f2f2;
 }
 
 .adults,
