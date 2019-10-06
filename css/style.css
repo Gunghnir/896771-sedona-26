@@ -237,13 +237,15 @@ background-color: #eeeeee}
     text-align: center;
 }
 
+.map-container {
+    position: relative; /* перепривязка точки отсчета координат карты */
+}
 .map {
-    position: absolute; /* а как его притянуть совсем к низу? bottom:0 работает не так, как ожидается*/
-	width: 100%;
+    position: absolute;
+	width: 1200px;
 	height: 593px;
-    background: url("../img/map.png") no-repeat;
-    margin-top: 95px;
     z-index: -100;
+    top: -481px;
 }
 
 /* Свойства формы */
@@ -288,7 +290,15 @@ background-color: #eeeeee}
     margin-bottom: 78px;
 }
 
+.form-menu button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
 .date-pick {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -308,13 +318,11 @@ background-color: #eeeeee}
 }
 
 .date-pick-item {
-    margin: auto;
+    position: relative;
 }
 
-.date-pick-item input {
+.calendar-icon {
     background: url("../img/calendar.svg") no-repeat;
-    background-position: right;
-    background-color: #f2f2f2;
     border:none;
     box-shadow: 0;
 }
@@ -324,6 +332,13 @@ background-color: #eeeeee}
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 55px;
+}
+
+.counter-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    box-sizing: border-box;
 }
 
 .counter-field {
@@ -338,14 +353,12 @@ background-color: #eeeeee}
 
 .adults,
 .kids {
-    padding-left: 15px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 21px;
 }
 
-.adults .counter-field {
-
+.kids {
+    padding-left: 54px;
 }
 
 .form-search {
@@ -360,6 +373,7 @@ background-color: #eeeeee}
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    box-shadow: none;
 }
 
 .form-search:hover {
@@ -458,7 +472,7 @@ background-color: #eeeeee}
     flex-direction: row;
 }
 
-.hotel-buttons .hotel-details {
+.hotel-details a {
     display:block;
     background-color: #81b3d2;
     color: #ffffff;
@@ -469,16 +483,16 @@ background-color: #eeeeee}
     margin-right: 5px;
 }
 
-.hotel-details:hover {
+.hotel-details a:hover {
     background-color: #669ec0;
 }
 
-.hotel-details:active {
+.hotel-details a:active {
     background-color: #5496bd;
     color: #88b6d1; /* цвет надписи почему-то не меняется, хотя цвет фона кнопки вполне меняется по нажатию */
 }
 
-.hotel-buttons .hotel-book {
+.hotel-book a {
     display: block;
     background-color: #766357;
     color: #ffffff;
@@ -490,11 +504,11 @@ background-color: #eeeeee}
     margin-right: 5px;
 }
 
-.hotel-book:hover {
+.hotel-book a:hover {
     background-color: #604e43;
 }
 
-.hotel-book:active {
+.hotel-book a:active {
     background-color: #503e33;
     color: #857871; /* цвет надписи почему-то не меняется, хотя цвет фона кнопки вполне меняется по нажатию */
 }
