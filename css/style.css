@@ -249,26 +249,38 @@ background-color: #eeeeee}
 }
 
 .map-container {
-    position: relative; /* перепривязка точки отсчета координат карты */
+    position: relative;
+    margin-top: 150px;
+    z-index: -100;
 }
-.map {
+/*.map {
     position: absolute;
 	width: 1200px;
 	height: 593px;
     z-index: -100;
     top: -481px;
-}
+} */
 
 /* Свойства формы */
 
+.date-form {
+    position: relative; /*смена точки отсчета для начала координат контейнера формы*/
+}
+
 .form-container {
-    position: relative;
+    position: absolute;
+    left: 315px;
+    bottom: -575px;
     width: 570px;
     margin: 0 auto;
 }
 
 .form-container a {
     text-decoration: none;
+}
+
+.date-form {
+    position: relative;
 }
 
 .form-name {
@@ -584,6 +596,7 @@ background-color: #eeeeee}
     align-items: center;
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
+    margin-top: -120px;
 }
 
 .footer-main a {
