@@ -455,31 +455,75 @@ background-color: #eeeeee}
     color: #94b9d2;
 }
 
-/*Свойства hotels.html */
-/* .hotel-content{
-    display: flex;
-    flex-direction: column;
-} */
-
 .filter {
     display: flex;
     flex-direction: row;
-    padding: 30px 6% 14px;
-    background: url("../img/hotel_background.png");
+    padding: 30px 6% 0px;
+    background: url("../img/hotel_background.png") no-repeat;
     color: #ffffff;
 }
 
 .filter-column {
     display: flex;
     flex-direction: column;
-    padding-right: 15px;
+    padding-right: 115px;
+    width: 200px;
+}
+
+.filter-column input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+}
+
+.filter-column input:checked + .check_box{
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.check_box {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-color: inherit;
+    margin-left: -40px;
+}
+
+
+.filter h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.filter-column label {
+    padding: 9px 0 15px;
+    margin-left: 40px;
 }
 
 .cost-range {
     display: flex;
+    width: 35   0px;
     flex-direction: column;
-    padding-left: 450px;
-    text-align: left;
+    padding-left: 200px;
+    width: 330px;
+}
+
+.cost-wrap {
+    position: relative;
+    height: 32px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.cost-wrap input {
+    width: 50px;
+    margin: 0px;
+    background: none;
+    border: none;
+    outline: #ffffff;
 }
 
 .wrap-hotel {
@@ -553,6 +597,7 @@ background-color: #eeeeee}
 
 .hotel-type {
     width: 100px;
+    padding-right: 15px;
 }
 
 .hotel-buttons {
