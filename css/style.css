@@ -456,6 +456,31 @@ background-color: #eeeeee}
 }
 
 /*Свойства hotels.html */
+/* .hotel-content{
+    display: flex;
+    flex-direction: column;
+} */
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 6% 14px;
+    background: url("../img/hotel_background.png");
+    color: #ffffff;
+}
+
+.filter-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.cost-range {
+    display: flex;
+    flex-direction: column;
+    padding-left: 450px;
+    text-align: left;
+}
 
 .wrap-hotel {
     display: flex;
@@ -463,6 +488,10 @@ background-color: #eeeeee}
     padding-bottom: 20px;
     padding-top: 20px;
     border-top: solid 2px #bdbbbc;
+}
+
+.wrap-hotel h2 {
+    margin-top: 0;
 }
 
 .hotel-summary {
