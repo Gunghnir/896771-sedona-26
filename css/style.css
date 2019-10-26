@@ -255,13 +255,6 @@ background-color: #eeeeee}
     margin-top: 150px;
     z-index: -100;
 }
-/*.map {
-    position: absolute;
-	width: 1200px;
-	height: 593px;
-    z-index: -100;
-    top: -481px;
-} */
 
 /* Свойства формы */
 
@@ -684,22 +677,25 @@ background-color: #eeeeee}
     margin-left: auto;
 }
 
-.sort-up {
+.sort-up path {
     fill: #cacaca;
+}
+
+.sort-up {
     padding-right: 14px;
 }
 
-.sort-down {
+.sort-down path{
     fill: #cacaca;
 }
 
-.sort-up:hover,
-.sort-down:hover {
+.sort-up:hover path,
+.sort-down:hover path{
     fill: #000000;
 }
 
-.sort-up:active,
-.sort-down:active {
+.sort-up:active path,
+.sort-down:active path {
     fill: #81b3d2;
 }
 
