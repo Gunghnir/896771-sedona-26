@@ -86,10 +86,12 @@ font-style: normal;
     text-decoration: none;
 }
 
-.site-navigation a:hover,
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
 .site-navigation a:focus {
-    justify-content: space-between;
-    background-color:#52a0e0;
+    color: #b2b2b2;
 }
 
 .logo {
@@ -455,18 +457,21 @@ background-color: #eeeeee}
     color: #94b9d2;
 }
 
+
+/* Стили сортировки hotels.html */
 .filter {
     display: flex;
     flex-direction: row;
-    padding: 30px 6% 0px;
+    padding: 30px 73px 0px;
     background: url("../img/hotel_background.png") no-repeat;
     color: #ffffff;
+    justify-content: space-between;
 }
 
 .filter-column {
     display: flex;
     flex-direction: column;
-    padding-right: 115px;
+    padding-right: 20px;
     width: 200px;
 }
 
@@ -482,9 +487,10 @@ background-color: #eeeeee}
 
 .check_box {
     position: absolute;
-    width: 23px;
-    height: 23px;
+    width: 27px;
+    height: 27px;
     background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
     background-color: inherit;
     margin-left: -40px;
 }
@@ -504,33 +510,204 @@ background-color: #eeeeee}
     display: flex;
     width: 35   0px;
     flex-direction: column;
-    padding-left: 200px;
-    width: 330px;
+    margin-left: auto;
+    width: 318px;
 }
 
 .cost-wrap {
+    display: flex;
     position: relative;
+    width: 100%;
     height: 32px;
-    margin-left: 10px;
     margin-bottom: 20px;
-    font-size: 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.cost-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 22px;
+    background: #ffffff;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.min-price,
+.max-price {
+    width: 90px;
+    padding-left: 40px;
 }
 
 .cost-wrap input {
+    display: inline-block;
     width: 50px;
-    margin: 0px;
-    background: none;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: transparent;
     border: none;
     outline: #ffffff;
+    align-self: center;
 }
 
+.slider-wrap {
+    position: relative;
+    margin-bottom: 32px;    
+}
+
+.slider {
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,.3);
+}
+
+.slider-bar {
+    width: 80%;
+    height: 2px;
+    background: rgba(255,255,255);
+}
+
+.slider-left {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-left:hover {
+    border: 9px solid #ffffff;
+    top: -9px;
+}
+
+.slider-right {
+    position: absolute;
+    left: 80%;
+    top: -8px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-right:hover {
+    border: 9px solid #ffffff;
+    top: -9px;
+}
+
+.filter-btn {
+    display: block;
+    width: 130px;
+    padding: 8px 28px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: 0;
+    align-self: center;
+}
+
+.filter-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 72px;
+    justify-content: space-between;
+}
+
+.results-found {
+    padding-right: 50px;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.results-categories,
+.results-sorting {
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.results-sorting a {
+    color: #dbdbdb;
+    border-bottom: 1px dotted #81b3d2;
+    text-decoration: none;
+}
+
+.results-sorting a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+    text-decoration: none;
+}
+
+.results-sorting a:active {
+    color: #000000;
+    border: none;
+    text-decoration: none;
+}
+
+
+.results-categories h3 {
+    padding-right: 40px;
+}
+
+.results-order {
+    display: flex;
+    height: 15px;
+    width: 36px;
+    align-self: center;
+    margin-left: auto;
+}
+
+.sort-up {
+    fill: #cacaca;
+    padding-right: 14px;
+}
+
+.sort-down {
+    fill: #cacaca;
+}
+
+.sort-up:hover,
+.sort-down:hover {
+    fill: #000000;
+}
+
+.sort-up:active,
+.sort-down:active {
+    fill: #81b3d2;
+}
+
+/* Hotels info styles */
 .wrap-hotel {
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 73px;
     border-top: solid 2px #bdbbbc;
 }
 
@@ -592,7 +769,7 @@ background-color: #eeeeee}
     font-size: 0;
     width: 72px;
     height: 17px;
-    background: url("../img/star.svg") repeat-x; /*Спросить, можно ли задать величину пустого пространства между повторяющимися элементами фона */
+    background: url("../img/star.svg") repeat-x;
 }
 
 .hotel-type {
