@@ -61,7 +61,6 @@ font-style: normal;
     padding-top: 12px;
     margin: 0px;
     padding-bottom: 15px;
-    margin-bottom: -56px;
     list-style: none;  
     justify-content: space-around;
 }
@@ -128,7 +127,7 @@ font-style: normal;
 .feature h3 {
     display: inline-block;
     text-align: center;
-    margin-top: 45px;
+    margin-top: -11px;
     margin-bottom: 13px;
     width: 520px;
     font-size: 21px;
