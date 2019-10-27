@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     src: url('../fonts/ptsans.woff2') format('woff2'),
          url('../fonts/ptsans.woff') format('woff');
     font-weight: normal;
@@ -19,7 +19,7 @@ body {
   }
 
 @font-face {
-font-family: 'PT Sans';
+font-family: "PT Sans";
 src: url('../fonts/ptsansbold.woff2') format('woff2'),
         url('../fonts/ptsansbold.woff') format('woff');
 font-weight: bold;
@@ -30,6 +30,7 @@ font-style: normal;
     display: block;
     margin: 0 auto;
     max-width: 1200px;
+    box-shadow: 0 5px 15px 0 rgba(59, 61, 61, 0.2);
 }
 
 .footer-main a,
@@ -46,7 +47,7 @@ font-style: normal;
     position: relative;
     background-color: #ffffff;
     color: #000000;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
 }
 
@@ -57,9 +58,10 @@ font-style: normal;
 
 .site-navigation {
     display: flex;
-    padding-top: 20px;
+    padding-top: 12px;
     margin: 0px;
     padding-bottom: 15px;
+    margin-bottom: -56px;
     list-style: none;  
     justify-content: space-around;
 }
@@ -71,6 +73,7 @@ font-style: normal;
 
 .site-navigation li:nth-child(2) {
     margin-right: auto;
+    padding-left: 25px;
     width: 210px;
     text-align: left;
 }
@@ -79,6 +82,14 @@ font-style: normal;
 .site-navigation li:nth-child(4) {
     width: 210px;
     text-align: right;
+}
+
+.site-navigation li:nth-child(3) {
+    padding-right: 50px;
+}
+
+.site-navigation li:nth-child(4) {
+    margin-right: -15px;
 }
 
 .site-navigation a {
@@ -110,17 +121,18 @@ font-style: normal;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 1200px auto;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 .feature h3 {
     display: inline-block;
     text-align: center;
-    margin-bottom: 41px;
+    margin-top: 45px;
+    margin-bottom: 13px;
     width: 520px;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 21px;
+    line-height: 29px;
 }
 
 .feature-list {
@@ -140,6 +152,16 @@ font-style: normal;
     width: 800px;
 }
 
+.feature-list img:nth-child(1) {
+    display: block;
+    float: left;
+}
+
+.feature-list img:nth-child(2) {
+    display: block;
+    float: right;
+}
+
 .feature-list ul {
     list-style: none;
 }
@@ -149,17 +171,30 @@ font-style: normal;
     margin-right: 0px;
 }
 
-.feature-list li:nth-child(1n+3) {
-background-color: #eeeeee}
-
-.feature-list img:nth-child(1) {
-    display: block;
-    float: left;
+.feature-list-last {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    min-height: 256px;
+    background-color: #eeeeee;
 }
 
-.feature-list img:nth-child(2) {
-    display: block;
-    float: right;
+.feature-list-last h3 {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    margin-top: 45px;
+    width: 120px;
+}
+
+.feature-list-last p {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    max-width: 257px;
 }
 
 .feature-city {
@@ -173,7 +208,7 @@ background-color: #eeeeee}
 
 .feature-city li {
     margin-top: 62px;
-    padding-top: 103px;
+    padding-top: 75px;
 }
 
 .feature-city li:nth-child(1) {
@@ -204,50 +239,70 @@ background-color: #eeeeee}
 
 .feature-note h3 {
     display: inline-block;
-    width: 250px;
-    margin-top: 42px;
-    margin-bottom: 18px;
-    text-align: center;
+    font-size: 21px;
+    width: 200px;
+    line-height: 29px;
+    margin-top: 40px;
+    margin-bottom: 22px;
 }
 
 .feature-note p {
+    display: inline-block;
     margin-top: 0;
+    margin-bottom: 20px;
+    width: 290px;
+    align-self: center;
 }
+
+.feature-note:nth-child(2) p {
+    width: 300px;
+}
+
 .feature-list h3 {
-    font-size: 30px;
-    line-height: 42px;    
+    font-size: 21px;
+    line-height: 23px;    
 }
 
 .interest-item {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 400px;
+    min-height: 190px;
     text-align: center;
 }
 
 .interest-item h3 {
     display: inline-block;
+    align-self: center;
+    text-align: center;
     width: 170px;
 }
 
 .interest-item p {
     display: inline-block;
+    align-self: center;
     width: 265px;
 }
 
-.note-last-line {
-    margin-top: 0px;
-    margin-bottom: 60px;
+.interest-item:nth-child(2) p,
+.interest-item:nth-child(3) p {
+    display: inline-block;
+    width: 285px;
 }
 
 .advertisment {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
     margin-bottom: 53px;
 }
 
 .advertisment h3 {
     text-align: center;
+    margin-top: 57px;
+    margin-bottom: 34px;
+    font-size: 28px;
+    line-height: 22px;
 }
 
 .map-container {
@@ -306,6 +361,7 @@ background-color: #eeeeee}
     position: relative;
     padding: 55px;
     margin-bottom: 78px;
+    box-shadow: 0 5px 15px 0 rgba(59, 61, 61, 0.2);
 }
 
 .form-menu button {
@@ -468,11 +524,15 @@ background-color: #eeeeee}
     width: 200px;
 }
 
-.filter-column input{
+.filter-column input {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
 }
+
+.filter-column input::-ms-check {
+    display:none
+} /* Скрыть чекбокс в IE */
 
 .filter-column input:checked + .check_box{
     background-image: url("../img/checkbox-on.svg");
@@ -795,14 +855,14 @@ background-color: #eeeeee}
 
 .hotel-details a:active {
     background-color: #5496bd;
-    color: #88b6d1; /* цвет надписи почему-то не меняется, хотя цвет фона кнопки вполне меняется по нажатию */
+    color: #88b6d1;
 }
 
 .hotel-book a {
     display: block;
     background-color: #766357;
     color: #ffffff;
-    height: 25px;
+    /* height: 25px; */
     font-weight: bold;
     text-align: center;
     padding: 0px 15px;
@@ -864,7 +924,7 @@ background-color: #eeeeee}
 
 .footer-hashtag {
     width: 400px;
-    font-size: 30px;
+    font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     justify-content: flex-start;
