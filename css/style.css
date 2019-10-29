@@ -151,16 +151,6 @@ font-style: normal;
     width: 800px;
 }
 
-.feature-list img:nth-child(1) {
-    display: block;
-    float: left;
-}
-
-.feature-list img:nth-child(2) {
-    display: block;
-    float: right;
-}
-
 .feature-list ul {
     list-style: none;
 }
@@ -168,6 +158,12 @@ font-style: normal;
 .feature-list li {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.feature-block {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
 }
 
 .feature-list-last {
@@ -227,8 +223,8 @@ font-style: normal;
 
 .feature-note {
     display: inline-block;
-    width:400px;
-    margin:0;
+    width: 400px;
+    margin: 0;
     align-items: center;
     text-align: center;
     background-color: #81b3d2;
@@ -249,7 +245,7 @@ font-style: normal;
     display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
-    width: 290px;
+    width: 280px;
     align-self: center;
 }
 
@@ -450,14 +446,12 @@ font-style: normal;
 .minus {
     margin-left: 21px;
     width: 37px;
-    float: left;
     background-color: #f2f2f2;
     color: #a9a9a9;
 }
 
 .plus {
     width: 37px;
-    float: right;
     background-color: #f2f2f2;
     color: #a9a9a9;
 }
