@@ -16,7 +16,6 @@ body {
 			url('../fonts/ptsans.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	color: #000;
 }
 
 @font-face {
@@ -25,7 +24,6 @@ body {
 			url('../fonts/ptsansbold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
-	color: #000;
 }
 
 .width-limit {
@@ -129,9 +127,9 @@ body {
 	vertical-align: middle;
 }
 
-.feature {
-	font-weight: 400;
-	color: #000000;
+.feature p {
+	font-weight: normal;
+	color: #333333;
 }
 
 .feature h3 {
@@ -202,9 +200,10 @@ body {
 	margin-top: 0px;
 	margin-bottom: 23px;
 	max-width: 265px;
-	font-weight: 400;
 	line-height: 21px;
 	vertical-align: middle;
+	color: #333333;
+	font-weight: normal;
 }
 
 .feature-list-last:nth-of-type(3) p {
@@ -309,9 +308,10 @@ body {
 	display: inline-block;
 	align-self: center;
 	width: 265px;
-	font-weight: 400;
+	font-weight: normal;
 	line-height: 21px;
 	vertical-align: middle;
+	color: #333333;
 }
 
 .interest-item:nth-child(2) p,
@@ -329,7 +329,8 @@ body {
 }
 
 .advertisment p {
-	font-weight: 400;
+	font-weight: normal;
+	color: #333333;
 }
 
 .advertisment h3 {
@@ -392,6 +393,7 @@ body {
 }
 
 .form-menu {
+	/* display: none; */
 	background-color: #ffffff;
 	position: relative;
 	padding: 55px;
@@ -854,7 +856,7 @@ input[type='number'] {
 .results-categories h3 {
 	padding-right: 40px;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: normal;
 	padding-left: 2px;
 	padding-top: 4px;
 }
@@ -967,10 +969,12 @@ input[type='number'] {
 	vertical-align: middle;
 }
 
-.hotel-type {
+.hotel-status span {
 	width: 100px;
 	padding-right: 15px;
 	padding-bottom: 13px;
+	color: #333333;
+	font-weight: normal;
 }
 
 .hotel-buttons {
