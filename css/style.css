@@ -60,7 +60,7 @@ body {
 	display: flex;
 	padding-top: 15px;
 	margin: 0px;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
 	list-style: none;  
 	justify-content: space-around;
 	/* margin-bottom: -7px; */
@@ -103,6 +103,10 @@ body {
 
 .site-navigation a:focus {
 	color: #b2b2b2;
+}
+
+.site-navigation a:active {
+	color: #766357;
 }
 
 .logo {
@@ -325,12 +329,12 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	text-align: center;
-	margin-bottom: 35px;
 }
 
 .advertisment p {
 	font-weight: normal;
 	color: #333333;
+	margin-bottom: 48px;
 }
 
 .advertisment h3 {
@@ -343,8 +347,7 @@ body {
 
 .map-container {
 	position: relative;
-	margin-top: 132px;
-	z-index: -100;
+	z-index: 0;
 }
 
 /* Свойства формы */
@@ -354,11 +357,20 @@ body {
 }
 
 .form-container {
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
 	position: absolute;
 	left: 316px;
-	bottom: -572px;
+	bottom: -440px;
 	width: 568px;
 	margin: 0 auto;
+}
+
+.form-show {
+	display: flex;
+	z-index: 1;
+	animation: appear 0.4s;
 }
 
 .form-container a {
@@ -371,16 +383,18 @@ body {
 
 .form-name {
 	display:block;
+	width: 568px;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: #766357;
 	color: #ffffff;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	text-decoration: none;
 }
 
 .form-name:hover {
@@ -393,13 +407,25 @@ body {
 }
 
 .form-menu {
-	/* display: none; */
+	display: block;
 	background-color: #ffffff;
-	position: relative;
 	padding: 55px;
-	margin-bottom: 78px;
+	margin-bottom: 43px;
 	box-shadow: 0 5px 15px 0 rgba(59, 61, 61, 0.2);
 }
+
+@keyframes appear {
+	0% {
+		/* transform: translateY(-2000px); */
+		opacity: 0;
+	}
+
+	100% {
+		/* transform: translateY(0); */
+		opacity: 1;
+	}
+}
+
 
 .form-menu button {
 	border: 0;
@@ -574,7 +600,12 @@ input[type='number'] {
 
 .minus:active,
 .plus:active {
-	color: #81b3d2;  
+	color: #81b3d2;
+}
+
+.minus:hover,
+.plus:hover {
+	color: inherit;
 }
 
 .adults,
@@ -645,6 +676,10 @@ input[type='number'] {
 	background-image: url('../img/checkbox-on.svg');
 }
 
+.filter-column input:focus {
+	background-image: inherit;
+}
+
 .check_box {
 	position: absolute;
 	width: 27px;
@@ -704,11 +739,13 @@ input[type='number'] {
 }
 
 .min-price {
+	display: flex;
 	width: 90px;
 	padding-left: 53px;
 	padding-top: 4px;
 }
 .max-price {
+	display: flex;
 	width: 90px;
 	padding-left: 36px;
 	padding-top: 4px;
@@ -726,6 +763,8 @@ input[type='number'] {
 	align-self: center;
 	font-weight: 400;
 	vertical-align: middle;
+	margin-bottom: 4px;
+	margin-left: 4px;
 }
 
 .slider-wrap {
@@ -891,6 +930,11 @@ input[type='number'] {
 	fill: #81b3d2;
 }
 
+.sort-up:focus path,
+.sort-down:focus path{
+	fill: #81b3d2;
+}
+
 /* Hotels info styles */
 .wrap-hotel {
 	display: flex;
@@ -947,6 +991,7 @@ input[type='number'] {
 	background: url('../img/star.svg');
 	background-repeat: space;
 	vertical-align: middle;
+	padding-bottom: 7px;
 }
 
 .hotel-star-3 {
@@ -957,6 +1002,7 @@ input[type='number'] {
 	background: url('../img/star.svg');
 	background-repeat: space;
 	vertical-align: middle;
+	padding-bottom: 7px;
 }
 
 .hotel-star-4 {
@@ -967,6 +1013,7 @@ input[type='number'] {
 	background: url('../img/star.svg');
 	background-repeat: space;
 	vertical-align: middle;
+	padding-bottom: 7px;
 }
 
 .hotel-status span {
@@ -1042,13 +1089,15 @@ input[type='number'] {
 .footer-main {
 	display: flex;
 	width:100%;
-	min-height: 128px;
+	min-height: 132px;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.7);
 	text-align: center;
-	margin-top: -128px;
+	margin-top: -132px;
+	z-index: 20;
+	position: relative;
 }
 
 .footer-main-hotels {
@@ -1075,7 +1124,7 @@ input[type='number'] {
 	font-weight: bold;
 	justify-content: flex-start;
 	text-decoration: none;
-	margin-top: -7px;
+	margin-top: -15px;
 	margin-left: 8px;
 }
 
@@ -1085,7 +1134,7 @@ input[type='number'] {
 	justify-content: center;
 	align-items: center;
 	margin-right: 4px;
-	margin-bottom: 16px;
+	margin-bottom: 27px;
 }
 
 .footer-icon {
@@ -1132,7 +1181,7 @@ input[type='number'] {
 	justify-content: center;
 	align-items: center;
 	margin-right: 8px;
-	margin-bottom: 4px;
+	margin-bottom: 15px;
 }
 
 .footer-logo svg {
